@@ -1,0 +1,14 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÃÂƒıÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(¼î„ìÿÿÿÿÿ
+E	java:S106!"+Replace this use of System.out by a logger.(îÅœúÿÿÿÿ
+E	java:S106#"+Replace this use of System.out by a logger.(À¨§ôùÿÿÿÿ
+E	java:S106%"+Replace this use of System.out by a logger.(–³Õ™ÿÿÿÿÿ
+Z
+java:S1854+"DRemove this useless assignment to local variable "currentThreadNum".(‰û¹£
+K
+java:S1481+"5Remove this unused "currentThreadNum" local variable.(‰û¹£
+E	java:S106>"+Replace this use of System.out by a logger.(ìâÔùÿÿÿÿ
+@	java:S106Q"+Replace this use of System.out by a logger.(”Çîû
+@	java:S106R"+Replace this use of System.out by a logger.(…º™ì
+E	java:S106]"+Replace this use of System.out by a logger.(„óÉßøÿÿÿÿ
