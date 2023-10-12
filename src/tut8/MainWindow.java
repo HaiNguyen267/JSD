@@ -13,6 +13,7 @@ public class MainWindow extends WindowAdapter implements ActionListener {
 
     private JFrame gui;
     private JTable jtable;
+
     public MainWindow() {
         createAndShowUI();
     }
@@ -36,9 +37,7 @@ public class MainWindow extends WindowAdapter implements ActionListener {
 
         DefaultTableModel model = new DefaultTableModel(data, headers);
         jtable = new JTable(model);
-        // set font for table content
         jtable.setFont(font);
-        // set font for table header
         JTableHeader tableHeader = jtable.getTableHeader();
         tableHeader.setFont(font);
 
@@ -58,7 +57,6 @@ public class MainWindow extends WindowAdapter implements ActionListener {
 
     @Override
     public void windowClosing(WindowEvent e) {
-        System.out.println("Goodbye!");
         System.exit(0);
     }
 
@@ -68,11 +66,6 @@ public class MainWindow extends WindowAdapter implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        // add row to table
-
-        // please create variable for the new row here
-        // and pass it to the constructor of AddContactWindow
-
         AddContactWindow addContactWindow = new AddContactWindow(jtable);
     }
 }

@@ -17,7 +17,7 @@ public class AddContactWindow {
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
 
-        JLabel nameLabel = new JLabel("Name");
+        JLabel nameLabel = new JLabel("Naame");
         name = new JTextField();
         JLabel phoneNumberLabel = new JLabel("Phone Number");
         phoneNumber = new JTextField();
@@ -41,7 +41,6 @@ public class AddContactWindow {
         });
 
         panel.add(add);
-
         frame.add(panel);
         frame.setVisible(true);
     }
