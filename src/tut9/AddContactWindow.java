@@ -1,7 +1,8 @@
-package tut8;
+package tut9;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import java.awt.*;
 
 public class AddContactWindow {
     private JTextField name;
@@ -13,6 +14,8 @@ public class AddContactWindow {
         frame.setSize(300, 200);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setLocationRelativeTo(null);
+
+
 
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
@@ -34,7 +37,7 @@ public class AddContactWindow {
             DefaultTableModel model = (DefaultTableModel) jtable.getModel();
             String nameString = name.getText();
             String phoneNumberString  = phoneNumber.getText();
-            model.addRow(new String[]{nameString, phoneNumberString});
+            model.addRow(new Object[]{nameString, phoneNumberString, false});
 
             // close this window
             frame.dispose();
